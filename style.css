@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+body{
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1000px;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1, h2, p, a {
+  color:white;
+}
+
+
+/*
+  ENTETE
+*/
+
+header {
+  width: 100%;
+  height: 100vh;
+  background:url('./images/header-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 100%;
+ 
+} 
+
+.header-contact{
+  height: 50px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+ .infos i, .social-medias i{
+  margin-left: 15px;
+}
+
+.header-filter {
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 13, 24, 0.5);
+
+}
+
+.header-title h1{
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+}
+.header-title img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.title{
+  color: rgb(119, 22, 14);;
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(253, 253, 253);
+
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.header-bloc-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.infos-icon {
+  width: auto;
+  min-width: 80px;
+  height: auto;
+  min-height: 80px;
+  background: rgba(119, 22, 14, 0.508);
+  padding: 1em;
+  border-radius: 100%;
+  font-weight: 900;
+}
+
+/*
+  FORMULAIRE DE CONTACT
+*/
+
+
+form{
+  width: 300px;
+  min-width: 250px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+
+form label {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+
+input, select{
+  width: 100%;
+  height: 30px;
+  border: 2px solid rgb(119, 22, 14);
+  padding: 0.1em;
+  background: white;
+}
+
+textarea {
+  width: 100%;
+  border: 2px solid rgb(119, 22, 14);
+  background: white;
+}
+
+input, section, textarea, .btn{
+  border-radius: 10px;
+}
+
+.btn{
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: white;
+  background: rgb(119, 22, 14);
+  cursor: pointer;
+}
+
+/*
+FOOTER
+*/
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+.heart {
+  background-color: red;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-45deg) scale(1);
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: rotate(-45deg) scale(1);
+  }
+
+  10% {
+      transform: rotate(-45) scale(1.1);
+  }
+
+  20% {
+  transform: rotate(-45deg) scale(0.9);
+  }
+  
+  30% {
+  transform: rotate(-45deg) scale(1.2);
+  }
+  
+  40% {
+  transform: rotate(-45deg) scale(0.9);
+  }
+  
+  50% {
+  transform: rotate(-45deg) scale(1.05);
+  }
+  
+  60% {
+  transform: rotate(-45deg) scale(0.95);
+  }
+  
+  70% {
+  transform: rotate(-45deg) scale(1);
+}
+}
+
+.heart::after {
+  background: inherit;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  height: 30px;
+  width: 30px;
+}
+
+.heart::before {
+  background: inherit;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+}
